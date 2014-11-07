@@ -3,11 +3,12 @@ var httpProxy = require('http-proxy')
 var proxy = httpProxy.createProxy();
 
 var options = {  
-    "18.85.44.139":"http://hammock.media.mit.edu:5984", 
-    "qa.ole.org": "http://hammock.media.mit.edu:5984", 
-    "somaliabell.ole.org": "http://hammock.media.mit.edu:5985", 
-    "ubuntubell.ole.org": "http://hammock.media.mit.edu:5986", 
-    "cambridge.ole.org": "http://hammock.media.mit.edu:5987"
+    "18.85.44.139":"http://127.0.0.1:5984", 
+    "earthbell-qa.ole.org": "http://127.0.0.1:5985", 
+    "nationalbell-qa.ole.org": "http://127.0.0.1:5986", 
+    "somaliabell.ole.org": "http://127.0.0.1:5987", 
+    "ubuntubell.ole.org": "http://127.0.0.1:5988", 
+    "earthbell.ole.org": "http://127.0.0.1:5989"
 }
 
 require('http').createServer(function(req, res) {  
